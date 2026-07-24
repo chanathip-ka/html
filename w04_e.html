@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <style>
+        .container {
+            /* display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap; */
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .box {
+            border-radius: 12px;
+            box-shadow: 4px 4px 7px gray;
+            width: 200px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="box" src="https://picsum.photos/200/300?random=1" alt="pic">
+        <img class="box" src="https://picsum.photos/200/300?random=2" alt="pic">
+        <img class="box" src="https://picsum.photos/200/300?random=3" alt="pic">
+        <img class="box" src="https://picsum.photos/200/300?random=4" alt="pic">
+        <img class="box" src="https://picsum.photos/200/300?random=5" alt="pic">
+    </div>
+</body>
+
+</html>

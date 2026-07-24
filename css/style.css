@@ -1,0 +1,56 @@
+.logo-lg {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.logo-xl {
+    font-size: 200px;
+}
+
+.logo-red {
+    color: red;
+}
+
+.logo-green {
+    color: green;
+}
+
+/* Value: X, Y, Space, Color */
+.logo-shadow {
+    text-shadow: 6px 6px 8px gray;
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    /* value: Top, Right, Bottom, Left */
+    /* value: Top-Bottom, Right-Left */
+    /* value: Top-Bottom-Right-Left */
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px gray;
+}
+
+.box-img {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px gainsboro;
+    margin: 20px;
+    /* กำหนดความ Smooth ของการขยาย */
+    transition: 0.3s;
+}
+
+.box-img:hover {
+    /* การ Scale ให้ใหญ่ขึ้น */
+    /* transform: scale(1.1); */
+
+    /* การหมุน */
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* เป็นการอ้างอิงถึง Children: Tag p ภายใน Class: box */
+.box>p {
+    color: red;
+}

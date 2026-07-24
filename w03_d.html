@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS</title>
+
+    <style>
+        body {
+            padding: 0 20px 0 20px;
+        }
+
+        h1 {
+            font-size: 100px;
+            color: violet;
+        }
+
+        #text-lg {
+            font-size: 50px;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. inline style = เขียนใน File ของ HTML ตรงๆ {
+            ปัญหา : Code มันรก
+        },
+
+        2. internal = เขียนอยู่บน Header(writing header using style tag separate usign and sharing, tag direction, # usign id, * usign class multi class(ใช้ร่วมกันได้)) {
+            ข้อดี : แยกออกเป็นสัดส่วนและใช้งานร่วมกันได้
+        }
+
+        Key ลัด
+            fk{ขนาด} และกด Enter : {
+                หมายเหตุ: เวลาใช้จริงไม่ต้องใส่ {},
+                ตัวอย่าง: fz50
+            }
+            fw{ขนาด} และกด Enter: {
+                หมายเหตุ: เวลาใช้จริงไม่ต้องใส่ {},
+                ตัวอย่าง: fwb
+            }
+            bgc และกด Enter: {
+                หมายเหตุ: เวลาใช้จริงไม่ต้องใส่ {}
+            }
+    -->
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p style="color: rgb(177, 16, 192); font-size: 50px; font-weight: bold; background-color: black;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, at.
+    </p>
+    <h2 style="background-color: azure; border: 2px solid #000;">
+        Lorem ipsum dolor sit amet.
+    </h2>
+
+    <p id="text-lg">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

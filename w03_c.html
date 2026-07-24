@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Form HTML</title>
+</head>
+
+<body>
+    <h1>List</h1>
+    <!-- Order List -->
+    <ol>
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+        <li>test4</li>
+    </ol>
+
+    <!-- Un Order List -->
+    <ul>
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+        <li>test4</li>
+    </ul>
+
+    <hr>
+
+    <!-- สำหรับเลือกหลายตัวเลือก -->
+    <input type="checkbox" name="" id=""> <br>
+
+    <!-- สำหรับเลือกตัวเลือกเดียว -->
+    <input type="radio" name="gender" id="male">
+    <label for="male">Male</label> <br>
+    <input type="radio" name="gender" id="female">
+    <label for="female">Female</label> <br>
+
+    <!-- สำหรับเลือกรูปแบบเพิ่มลด -->
+    <input type="range" name="" id="" min="0" max="100"> <br>
+
+    <!-- สำหรับเลือกสี -->
+    <input type="color" name="" id=""> <br>
+
+    <!-- สำหรับเลือกวัน -->
+    <input type="date" name="" id=""> <br>
+
+    <!-- สำหรับเลือกวัน-เวลา -->
+    <input type="datetime-local" name="" id=""> <br>
+
+    <!-- สำหรับเลือกเวลา -->
+    <input type="time" name="" id=""> <br>
+
+    <!-- สำหรับเลือก Email -->
+    <input type="email" name="" id=""> <br>
+
+    <!-- สำหรับเลือกเบอรโทรศัพท์ -->
+    <input type="tel" name="" id=""> <br>
+
+    <!-- สำหรับเลือกไฟล์เพื่อ Upload -->
+    <input type="file" name="" id=""> <br>
+
+    <!-- สำหรับ Click เลือกภายใน Dropdown -->
+    <select name="" id="">
+        <option value="">None</option>
+        <option value="15000">Test1</option>
+        <option value="30000">Test2</option>
+    </select> <br>
+
+    <!-- สำหรับ Link URL -->
+    <input type="url" name="" id="">
+
+    <hr>
+
+    <!--
+        action = สิ่งที่จะให้ทำเมื่อกรอก Form เสร็จว่าจะให้ทำอะไรต่อ
+        method = GET, POST, UPDATE, DELETE, PATCH
+        attribute ภายใน Label(for) = Input(id)
+    -->
+    <form action="#">
+        <fieldset>
+            <legend>Login Form</legend>
+            <label for="username">Username : </label>
+            <input type="text" name="username" id="username" placeholder="Enter your username" required>
+
+            <br><br>
+
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+
+            <br><br>
+
+            <!-- ใช้สำหรับบันทึก Form -->
+            <input type="submit" value="Sign In">
+
+            <!-- ใช้ในการ Reset หรือกำหนดค่าว่างไปให้ Form -->
+            <input type="reset" value="Clear">
+        </fieldset>
+    </form>
+</body>
+
+</html>
